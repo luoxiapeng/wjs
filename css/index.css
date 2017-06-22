@@ -1,0 +1,539 @@
+/*头部通栏*/
+.header .row > div {
+  height: 40px;
+  border: 1px solid gray;
+  line-height: 40px;
+  text-align: center;
+}
+.header .row > div > a {
+  color: gray;
+  font-size: 13px;
+  text-decoration: none;
+}
+.header .row > div:first-child {
+  position: relative;
+}
+.header .row:first-child img {
+  display: none;
+  position: absolute;
+  left: 40px;
+  top: 40px;
+}
+/*导航栏*/
+/*  将bootstrap中 样式进行拷贝 以及替换 */
+.wjs_default {
+  background-color: #f8f8f8;
+  border-color: #e7e7e7;
+  margin-bottom: 0px;
+}
+.wjs_default .navbar-brand {
+  color: #777;
+  height: 80px;
+  line-height: 50px;
+}
+.wjs_default .navbar-brand span {
+  font-size: 50px;
+}
+.wjs_default .navbar-brand span:first-child {
+  color: red;
+}
+.wjs_default .navbar-brand span:last-child {
+  color: black;
+}
+.wjs_default .navbar-brand:hover,
+.wjs_default .navbar-brand:focus {
+  color: #5e5e5e;
+  background-color: transparent;
+}
+.wjs_default .navbar-text {
+  color: #777;
+}
+.wjs_default .navbar-nav > li > a {
+  color: #777;
+  height: 80px;
+  line-height: 50px;
+}
+.wjs_default .navbar-nav > li > a:hover,
+.wjs_default .navbar-nav > li > a:focus {
+  color: #333;
+  background-color: transparent;
+  border-bottom: 3px solid red;
+}
+.wjs_default .navbar-nav > .active > a,
+.wjs_default .navbar-nav > .active > a:hover,
+.wjs_default .navbar-nav > .active > a:focus {
+  color: #555;
+}
+.wjs_default .navbar-nav > .disabled > a,
+.wjs_default .navbar-nav > .disabled > a:hover,
+.wjs_default .navbar-nav > .disabled > a:focus {
+  color: #ccc;
+  background-color: transparent;
+}
+.wjs_default .navbar-toggle {
+  border-color: #ddd;
+}
+.wjs_default .navbar-toggle:hover,
+.wjs_default .navbar-toggle:focus {
+  background-color: #ddd;
+}
+.wjs_default .navbar-toggle .icon-bar {
+  background-color: #888;
+}
+.wjs_default .navbar-collapse,
+.wjs_default .navbar-form {
+  border-color: #e7e7e7;
+}
+.wjs_default .navbar-nav > .open > a,
+.wjs_default .navbar-nav > .open > a:hover,
+.wjs_default .navbar-nav > .open > a:focus {
+  color: #555;
+  background-color: #e7e7e7;
+}
+@media (max-width: 767px) {
+  .wjs_default .navbar-nav .open .dropdown-menu > li > a {
+    color: #777;
+  }
+  .wjs_default .navbar-nav .open .dropdown-menu > li > a:hover,
+  .wjs_default .navbar-nav .open .dropdown-menu > li > a:focus {
+    color: #333;
+    background-color: transparent;
+  }
+  .wjs_default .navbar-nav .open .dropdown-menu > .active > a,
+  .wjs_default .navbar-nav .open .dropdown-menu > .active > a:hover,
+  .wjs_default .navbar-nav .open .dropdown-menu > .active > a:focus {
+    color: #555;
+    background-color: #e7e7e7;
+  }
+  .wjs_default .navbar-nav .open .dropdown-menu > .disabled > a,
+  .wjs_default .navbar-nav .open .dropdown-menu > .disabled > a:hover,
+  .wjs_default .navbar-nav .open .dropdown-menu > .disabled > a:focus {
+    color: #ccc;
+    background-color: transparent;
+  }
+}
+.wjs_default .navbar-link {
+  color: #777;
+}
+.wjs_default .navbar-link:hover {
+  color: #333;
+}
+.wjs_default .btn-link {
+  color: #777;
+}
+.wjs_default .btn-link:hover,
+.wjs_default .btn-link:focus {
+  color: #333;
+}
+.wjs_default .btn-link[disabled]:hover,
+fieldset[disabled] .wjs_default .btn-link:hover,
+.wjs_default .btn-link[disabled]:focus,
+fieldset[disabled] .wjs_default .btn-link:focus {
+  color: #ccc;
+}
+/*轮播图*/
+.banner .banner_a {
+  height: 410px;
+  background-size: cover ;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: block;
+}
+.banner .image_a {
+  background-image: url("../images/slide_01_2000x410.jpg");
+}
+.banner .image_b {
+  background-image: url("../images/slide_02_2000x410.jpg");
+}
+.banner .image_c {
+  background-image: url("../images/slide_03_2000x410.jpg");
+}
+.banner .image_d {
+  background-image: url("../images/slide_04_2000x410.jpg");
+}
+.banner .item .mobile_a {
+  width: 100%;
+  display: block;
+}
+/* 微金所 信息 区域 布局 */
+.info {
+  padding-top: 50px;
+  /* 栅格系统的 col div的样式  */
+  /* 媒体对象 */
+}
+.info .container {
+  /*  如果 给的是 width 固定不变了 屏幕缩小 也不会被压缩   */
+  max-width: 910px;
+}
+.info .row > div {
+  margin-bottom: 20px;
+  padding-left: 30px;
+}
+.info .wjs_media a {
+  color: gray;
+  /* 字体图标 */
+}
+.info .wjs_media a:hover {
+  color: red;
+}
+.info .wjs_media a .wjs_font {
+  font-size: 40px;
+}
+.tuijian {
+  border-bottom: 1px solid #000;
+}
+.wjs-tabs {
+  border-bottom: 1px solid #ddd;
+}
+.wjs-tabs > li {
+  float: left;
+  margin-bottom: -1px;
+}
+.wjs-tabs > li > a {
+  margin-right: 2px;
+  line-height: 1.42857143;
+  border-radius: 4px 4px 0 0;
+  color: black;
+}
+.wjs-tabs > li > a:hover {
+  background-color: transparent;
+}
+.wjs-tabs > li.active > a,
+.wjs-tabs > li.active > a:hover,
+.wjs-tabs > li.active > a:focus {
+  color: #555;
+  cursor: default;
+  background-color: #fff;
+  border-bottom: 3px solid red;
+}
+.wjs-tabs.nav-justified {
+  width: 100%;
+  border-bottom: 0;
+}
+.wjs-tabs.nav-justified > li {
+  float: none;
+}
+.wjs-tabs.nav-justified > li > a {
+  margin-bottom: 5px;
+  text-align: center;
+}
+.wjs-tabs.nav-justified > .dropdown .dropdown-menu {
+  top: auto;
+  left: auto;
+}
+@media (min-width: 768px) {
+  .wjs-tabs.nav-justified > li {
+    display: table-cell;
+    width: 1%;
+  }
+  .wjs-tabs.nav-justified > li > a {
+    margin-bottom: 0;
+  }
+}
+.wjs-tabs.nav-justified > li > a {
+  margin-right: 0;
+  border-radius: 4px;
+}
+.wjs-tabs.nav-justified > .active > a,
+.wjs-tabs.nav-justified > .active > a:hover,
+.wjs-tabs.nav-justified > .active > a:focus {
+  border: 1px solid #ddd;
+}
+@media (min-width: 768px) {
+  .wjs-tabs.nav-justified > li > a {
+    border-bottom: 1px solid #ddd;
+    border-radius: 4px 4px 0 0;
+  }
+  .wjs-tabs.nav-justified > .active > a,
+  .wjs-tabs.nav-justified > .active > a:hover,
+  .wjs-tabs.nav-justified > .active > a:focus {
+    border-bottom-color: #fff;
+  }
+}
+
+/*  预约区域的 布局 */
+.book {
+  border-top: 1px solid gray;
+  border-bottom: 1px solid gray;
+}
+.book .container-fluid {
+  padding: 20px 100px;
+}
+.book .container-fluid .pull-left a {
+  color: red;
+  border-bottom: 1px dashed red;
+}
+.book .container-fluid .book_left p>span{
+  color: red;
+}
+.book .container-fluid .pull-left a:hover {
+  text-decoration: none;
+}
+.book .container-fluid .pull-right a {
+  color: gray;
+}
+.book .container-fluid .pull-right a:hover {
+  color: red;
+}
+/*优惠券*/
+.price_ticket {
+  display: block;
+  margin: 20px 0px;
+  position: relative;
+  box-shadow: 2px 2px 1px gray;
+}
+.price_ticket:hover {
+  text-decoration: none;
+}
+.price_ticket::before {
+  color: white;
+  font-size: 40px;
+  position: absolute;
+}
+.price_ticket .tike_left {
+  background-color: red;
+  overflow: hidden;
+  height: 150px;
+  border-right: 1px dashed white;
+  color: white;
+}
+.price_ticket .tike_left h3 {
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  padding-top: 10px;
+  text-decoration: none;
+}
+.price_ticket .tike_left > div:nth-of-type(2n) {
+  text-align: right;
+}
+.price_ticket .tike_left > .col-xs-6 p {
+  font-size: 14px;
+  font-weight: 900;
+  height: 16px;
+  overflow: hidden;
+}
+.price_ticket .tike_right {
+  min-width: 150px;
+  height: 150px;
+  float: right;
+  background-color: red;
+  position: relative;
+}
+.price_ticket .tike_right p:nth-child(1) {
+  text-align: center;
+  padding-top: 30px;
+  font-weight: 900;
+  color: white;
+}
+.price_ticket .tike_right p:nth-child(2) {
+  text-align: center;
+  font-weight: 900;
+  color: white;
+}
+.price_ticket .tike_right::before {
+  content: "";
+  height: 30px;
+  width: 30px;
+  background-color: white;
+  border-radius: 50%;
+  position: absolute;
+  left: -15px;
+  right: -15px;
+  margin-top: -15px;
+  box-shadow: inset 0 -1px #333333;
+}
+.price_ticket .tike_right::after {
+  content: "";
+  height: 30px;
+  width: 30px;
+  background-color: white;
+  position: absolute;
+  border-radius: 50%;
+  left: -15px;
+  bottom: -15px;
+  box-shadow: inset 0 1px #333;
+}
+
+/*新闻*/
+.news .col-lg-2 h3 {
+  padding-bottom: 20px;
+  border-bottom: 1px solid #000000;
+  position: relative;
+}
+.news .col-lg-2 h3::before {
+  content: "";
+  height: 8px;
+  width: 8px;
+  border-radius: 50%;
+  position: absolute;
+  right: 0px;
+  bottom: -4px;
+  background-color: white;
+  border: 1px solid gray;
+}
+/* 新闻页布局效果 */
+.news h3 {
+  text-align: center;
+  border-bottom: 1px solid gray;
+  padding-bottom: 10px;
+  position: relative;
+}
+.news h3::before {
+  content: '';
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  border: 1px solid gray;
+  background-color: white;
+  bottom: -4px;
+  right: 0px;
+  border-radius: 50%;
+}
+/* 修改bootstrap原生的class */
+.new-tabs > li {
+  float: left;
+  width: 100%;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+/*  当屏幕尺寸 变小的时候  修改 li的宽度 */
+@media screen and (max-width: 1200px) {
+  .new-tabs > li {
+    width: 25%;
+  }
+}
+.new-tabs > li > a {
+  margin-right: 2px;
+  border: 1px solid transparent;
+  border-radius: 4px 4px 0 0;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background-color: #ccc;
+  color: white;
+  /*  设置字体图标的尺寸 */
+  font-size: 40px;
+  text-align: center;
+  line-height: 70px;
+  padding: 0px;
+}
+.new-tabs > li > a:hover {
+  background-color: red;
+}
+.new-tabs > li.active > a,
+.new-tabs > li.active > a:hover,
+.new-tabs > li.active > a:focus {
+  cursor: default;
+  background-color: #fff;
+  border-bottom-color: transparent;
+  background-color: red;
+}
+.new-tabs.nav-justified {
+  width: 100%;
+  border-bottom: 0;
+}
+.new-tabs.nav-justified > li {
+  float: none;
+}
+.new-tabs.nav-justified > li > a {
+  margin-bottom: 5px;
+  text-align: center;
+}
+.new-tabs.nav-justified > .dropdown .dropdown-menu {
+  top: auto;
+  left: auto;
+}
+@media (min-width: 768px) {
+  .new-tabs.nav-justified > li {
+    display: table-cell;
+    width: 1%;
+  }
+  .new-tabs.nav-justified > li > a {
+    margin-bottom: 0;
+  }
+}
+.new-tabs.nav-justified > li > a {
+  margin-right: 0;
+  border-radius: 4px;
+}
+.new-tabs.nav-justified > .active > a,
+.new-tabs.nav-justified > .active > a:hover,
+.new-tabs.nav-justified > .active > a:focus {
+  border: 1px solid #ddd;
+}
+@media (min-width: 768px) {
+  .new-tabs.nav-justified > li > a {
+    border-bottom: 1px solid #ddd;
+    border-radius: 4px 4px 0 0;
+  }
+  .new-tabs.nav-justified > .active > a,
+  .new-tabs.nav-justified > .active > a:hover,
+  .new-tabs.nav-justified > .active > a:focus {
+    border-bottom-color: #fff;
+  }
+}
+/*  微金所 新闻页面 点击导航区域的 线段 */
+.new-tabs {
+  position: relative;
+}
+.new-tabs .line {
+  height: 80%;
+  border: 1px dashed gray;
+  position: absolute;
+  top: 22px;
+  left: 35px;
+}
+/* 新闻列表页  第三分栏的样式 */
+.news {
+  border-top: 1px solid gray;
+  border-bottom: 1px solid gray;
+}
+.news .tab-content ul {
+  list-style: none;
+  padding-top: 30px;
+}
+.news .tab-content ul li {
+  padding: 10px 0;
+}
+.news .tab-content ul li a {
+  color: gray;
+}
+/* 顶部的合作单位样式 */
+.footer {
+  text-align: center;
+  background-color: #eee;
+  padding-top: 20px;
+}
+.footer h3 {
+  margin-top: 0px;
+}
+.footer ul {
+  list-style: none;
+  display: inline-block;
+}
+.footer ul li {
+  float: left;
+  font-size: 80px;
+  margin: 0 20px;
+}
+.footer ul li a {
+  color: gray;
+  text-decoration: none;
+}
+.footer > h3 {
+  text-align: center;
+}
+.footer ul {
+  list-style: none;
+}
+.footer ul > li {
+  font-size: 100px;
+  float: left;
+  margin-left: 20px;
+}
+.footer ul > li > a {
+  display: block;
+  text-decoration: none;
+  color: gray;
+}

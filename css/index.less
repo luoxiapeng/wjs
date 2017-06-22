@@ -1,0 +1,449 @@
+.header{
+  .row>div{
+    height: 40px;
+    border: 1px solid gray;
+    line-height: 40px;
+    text-align: center;
+    &>a{
+      color: gray;
+      font-size: 13px;
+      text-decoration: none;
+    }
+  }
+  .row >div:first-child{
+    position: relative;
+  }
+  .row:first-child img{
+   display:none;
+   position: absolute;
+   left: 40px;
+   top: 40px;
+ }
+}
+
+//轮播图
+.banner{
+
+  .banner_a {
+    height: 410px;
+    background-size:cover ;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: block;
+
+  }
+  .image_a{
+    background-image: url("../images/slide_01_2000x410.jpg");
+
+  }
+  .image_b{
+    background-image: url("../images/slide_02_2000x410.jpg");
+
+  }
+  .image_c{
+    background-image: url("../images/slide_03_2000x410.jpg");
+
+  }
+  .image_d{
+    background-image: url("../images/slide_04_2000x410.jpg");
+
+  }
+  .item .mobile_a{
+    width: 100%;
+    display: block;
+  }
+
+}
+//信息表
+.info{
+  max-width: 910px;
+  .row{
+    &>div{
+      padding-left: 30px;
+      margin-bottom: 10px;
+    }
+  }
+
+  .media-left{
+    &>a{
+      &>span{
+        font-size: 50px;
+        color:#000;
+      }
+    }
+  }
+  .media-heading{
+    line-height: 50px;
+  }
+}
+//tab栏目
+.tuijian{
+  border-bottom: 1px solid #000;
+}
+.wjs-tabs {
+  border-bottom: 1px solid #ddd;
+ 
+}
+.wjs-tabs > li {
+  float: left;
+  margin-bottom: -1px;
+}
+.wjs-tabs > li > a {
+  margin-right: 2px;
+  line-height: 1.42857143;
+  border-radius: 4px 4px 0 0;
+  color: black;
+}
+.wjs-tabs > li > a:hover {
+  background-color: transparent;
+}
+.wjs-tabs > li.active > a,
+.wjs-tabs > li.active > a:hover,
+.wjs-tabs > li.active > a:focus {
+  color: #555;
+  cursor: default;
+  background-color: #fff;
+  border-bottom: 3px solid red;
+}
+.wjs-tabs.nav-justified {
+  width: 100%;
+  border-bottom: 0;
+}
+.wjs-tabs.nav-justified > li {
+  float: none;
+}
+.wjs-tabs.nav-justified > li > a {
+  margin-bottom: 5px;
+  text-align: center;
+}
+.wjs-tabs.nav-justified > .dropdown .dropdown-menu {
+  top: auto;
+  left: auto;
+}
+@media (min-width: 768px) {
+  .wjs-tabs.nav-justified > li {
+    display: table-cell;
+    width: 1%;
+  }
+  .wjs-tabs.nav-justified > li > a {
+    margin-bottom: 0;
+  }
+}
+.wjs-tabs.nav-justified > li > a {
+  margin-right: 0;
+  border-radius: 4px;
+}
+.wjs-tabs.nav-justified > .active > a,
+.wjs-tabs.nav-justified > .active > a:hover,
+.wjs-tabs.nav-justified > .active > a:focus {
+  border: 1px solid #ddd;
+}
+@media (min-width: 768px) {
+  .wjs-tabs.nav-justified > li > a {
+    border-bottom: 1px solid #ddd;
+    border-radius: 4px 4px 0 0;
+  }
+  .wjs-tabs.nav-justified > .active > a,
+  .wjs-tabs.nav-justified > .active > a:hover,
+  .wjs-tabs.nav-justified > .active > a:focus {
+    border-bottom-color: #fff;
+  }
+}
+//优惠券
+.price_ticket{
+  display: block;
+  margin: 20px 0px;
+  position: relative;
+ 
+  box-shadow:2px 2px 1px gray;
+  &:hover{
+    text-decoration: none;
+  }
+  &::before{
+    color:white;
+    font-size:40px;
+    position:absolute;
+  }
+
+  .tike_left{
+    background-color: red;
+    overflow: hidden;
+    height: 150px;
+    border-right: 1px dashed white;
+    h3{
+      text-align: center;
+      padding: 0;
+      margin: 0;
+      padding-top: 10px;
+      text-decoration:none;
+    }
+    color:white;
+    &> div:nth-of-type(2n){
+      text-align: right;
+    }
+    &>.col-xs-6 p{
+      font-size: 14px;
+      font-weight: 900;
+      height:16px;
+      overflow: hidden;
+
+    }
+
+  }
+  .tike_right{
+    min-width: 150px;
+    height: 150px;
+    float: right;
+    background-color:red;
+    position: relative;
+    & p:nth-child(1){
+      text-align: center;
+      padding-top: 30px;
+      font-weight: 900;
+      color:white;
+    }
+    & p:nth-child(2){
+      text-align: center;
+      font-weight: 900;
+      color:white;
+    }
+    &::before{
+      content:"";
+      height: 30px;
+      width: 30px;
+      background-color: white;
+      border-radius: 50%;
+      position: absolute;
+      left: -15px;
+      right: -15px;
+      margin-top:-15px;
+      box-shadow: inset 0 -1px #333;
+    }
+    &::after{
+      content: "";
+      height: 30px;
+      width: 30px;
+      background-color: white;
+      position: absolute;
+      border-radius: 50%;
+      left: -15px;
+      bottom: -15px;
+      box-shadow: inset 0 1px #333;
+    }
+  }
+}
+
+//新闻
+.news{
+  .col-lg-2 h3{
+    padding-bottom: 20px;
+    border-bottom:1px solid #000000;
+    position: relative;
+    &::before{
+      content:"";
+      height: 8px;
+      width: 8px;
+      border-radius: 50%;
+      position: absolute;
+      right: 0px;
+      bottom: -4px;
+      background-color: white;
+      border: 1px solid gray;
+    }
+  }
+}
+
+
+/* 新闻页布局效果 */
+.news{
+  h3{
+    text-align: center;
+    border-bottom:1px solid gray;
+    padding-bottom: 10px;
+    position:relative;
+    &::before{
+      content:'';
+      position:absolute;
+      width: 8px;
+      height: 8px;
+      border:1px solid gray;
+      background-color:white;
+      bottom:-4px;
+      right:0px;
+      border-radius: 50%;
+    }
+  }
+}
+
+/* 修改bootstrap原生的class */
+.new-tabs {
+  // border-bottom: 1px solid #ddd;
+}
+.new-tabs > li {
+  float: left;
+  width: 100%;
+  // margin-bottom: -1px;
+  margin-top:20px;
+  margin-bottom:30px;
+}
+
+/*  当屏幕尺寸 变小的时候  修改 li的宽度 */
+@media screen and (max-width:1200px){
+  .new-tabs > li {
+    width: 25%;
+  }
+}
+
+.new-tabs > li > a {
+  margin-right: 2px;
+  // line-height: 1.42857143;
+  border: 1px solid transparent;
+  border-radius: 4px 4px 0 0;
+  width: 70px;
+  height: 70px;
+  border-radius:50%;
+  background-color:#ccc;
+  color:white;
+
+  /*  设置字体图标的尺寸 */
+  font-size:40px;
+  text-align:center;
+  line-height:70px;
+  padding:0px;
+
+
+}
+.new-tabs > li > a:hover {
+  // border-color: #eee #eee #ddd;
+  background-color:red;
+}
+.new-tabs > li.active > a,
+.new-tabs > li.active > a:hover,
+.new-tabs > li.active > a:focus {
+  // color: #555;
+  cursor: default;
+  background-color: #fff;
+  // border: 1px solid #ddd;
+  border-bottom-color: transparent;
+  background-color:red;
+}
+.new-tabs.nav-justified {
+  width: 100%;
+  border-bottom: 0;
+}
+.new-tabs.nav-justified > li {
+  float: none;
+}
+.new-tabs.nav-justified > li > a {
+  margin-bottom: 5px;
+  text-align: center;
+}
+.new-tabs.nav-justified > .dropdown .dropdown-menu {
+  top: auto;
+  left: auto;
+}
+@media (min-width: 768px) {
+  .new-tabs.nav-justified > li {
+    display: table-cell;
+    width: 1%;
+  }
+  .new-tabs.nav-justified > li > a {
+    margin-bottom: 0;
+  }
+}
+.new-tabs.nav-justified > li > a {
+  margin-right: 0;
+  border-radius: 4px;
+}
+.new-tabs.nav-justified > .active > a,
+.new-tabs.nav-justified > .active > a:hover,
+.new-tabs.nav-justified > .active > a:focus {
+  border: 1px solid #ddd;
+}
+@media (min-width: 768px) {
+  .new-tabs.nav-justified > li > a {
+    border-bottom: 1px solid #ddd;
+    border-radius: 4px 4px 0 0;
+  }
+  .new-tabs.nav-justified > .active > a,
+  .new-tabs.nav-justified > .active > a:hover,
+  .new-tabs.nav-justified > .active > a:focus {
+    border-bottom-color: #fff;
+  }
+}
+
+
+/*  微金所 新闻页面 点击导航区域的 线段 */
+.new-tabs{
+  position:relative;
+}
+.new-tabs .line{
+  height: 80%;
+  border:1px dashed gray;
+  position:absolute;
+  top:22px;
+  left:35px;
+}
+
+
+/* 新闻列表页  第三分栏的样式 */
+.news {
+  border-top:1px solid gray;
+  border-bottom:1px solid gray;
+  .tab-content{
+    ul{
+      list-style: none;
+      padding-top: 30px;
+      li{
+        padding:10px 0;
+        a{
+          color:gray;
+        }
+      }
+    }
+  }
+}
+
+
+/* 顶部的合作单位样式 */
+.footer{
+  text-align:center;
+  background-color:#eee;
+  padding-top:20px;
+  h3{
+    margin-top:0px;
+  }
+  ul{
+    list-style:none;
+    display:inline-block;
+    li{
+      float:left;
+      font-size:80px;
+      margin:0 20px;
+      a{
+        color:gray;
+        text-decoration:none;
+      }
+    }
+  }
+}
+//底部
+.footer{
+  &>h3{
+  text-align: center;
+}
+  ul{
+    list-style: none;
+  }
+  ul>li{
+    font-size: 100px;
+    float: left;
+    margin-left: 20px;
+
+  }
+  ul>li>a{
+    display: block;
+    text-decoration: none;
+    color: gray;
+  }
+}
